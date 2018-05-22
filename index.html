@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head><title>Hyewon Kim _ Portfolio</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <div class="navbar">
+    <a class="js-scrollTo logo" href="#top"><img class="logo" src="https://image.freepik.com/icones-gratuites/seul-cube_318-36160.jpg"></a>
+    <a href="#top" class="js-scrollTo"><div class="menu1">ABOUT</div></a>
+    <a href="#mportfolio" class="js-scrollTo"><div class="menu2">PORTFOLIO</div></a>
+    <a href="#mcontact" class="js-scrollTo"><div class="menu3">CONTACT</div></a>
+  </div>
+
+<div class="extended_page" id="top">
+  <div class="left_page">
+  </div>
+  <div class="page">
+
+    <div class="about" id="mabout">
+      <p style="cursor:default;"><b style="font-size:80px;">HYEWON KIM</b> <br><br><br>
+        Frontend developer and UX/UI designer based in Paris<br><br>making some brutal websites since one month.</p>
+    </div>
+
+    <div id="mportfolio"></div>
+    <div class="portfolio">
+      <div>
+        <a href="https://youmakemefeellucky.github.io/melon_sandwich/index.html" target='_blank'><img src="https://youmakemefeellucky.github.io/web_exemples/melon_sandwich.png"><span>melon sandwich</span></a>
+      </div>
+      <div>
+        <a href="https://youmakemefeellucky.github.io/sugar_cube/" target='_blank'><img src="https://youmakemefeellucky.github.io/web_exemples/sugar_cube.png"><span>sugar cube</span></a>
+      </div>
+      <div>
+        <a href="https://youmakemefeellucky.github.io/smiling_grid/index.html" target='_blank'><img src="https://youmakemefeellucky.github.io/web_exemples/smiling_grid.png"><span>smiling grid</span></a>
+      </div>
+      <div>
+        <a href="https://youmakemefeellucky.github.io/broken-heart/index.html" target='_blank'><img src="https://youmakemefeellucky.github.io/web_exemples/broken_heart.png"><span>broken heart</span></a>
+      </div>
+    </div>
+
+    <div class="contact" id="mcontact">
+      <div class="contact_a"><span style="font-style:normal; display: inline; cursor:default; color:#000">love letter ?</span>
+        <form>
+          <input type="text" name="name" placeholder="&nbsp;your name">
+          <input type="text" name="email" placeholder="&nbsp;your email">
+          <input type="text" name="animal" placeholder="&nbsp;dog or cat">
+          <input type="text" name="message" placeholder="&nbsp;anything you want to say">
+          <button disabled>I don't yet know how to make it work</button>
+        </form>
+      </div>
+
+      <div class="contact_b">
+        <a target='_blank' href="https://www.facebook.com/hyewon.noweyh"><div>facebook</div></a>
+        <a target='_blank' href="https://www.instagram.com/monotombowcrayon/"><div>instagram</div></a>
+        <a target='_blank' href="https://www.youtube.com/channel/UCLk-RH6INBZM0k6j9yDhZKg?view_as=subscriber"><div>youtube</div></a>
+      </div>
+
+    </div>
+  </div>
+
+ <div class="right_page">
+   <div id="a_rotate">
+     <h2 style="color:#DE4400">qui suis-je</h2>
+   </div>
+
+   <div id="p_rotate">
+     <h2 style="color:#2B710B">ce que j'ai fait</h2>
+   </div>
+
+   <div id="c_rotate">
+     <h2 style="color:#0913B0">contactez-moi</h2>
+   </div>
+ </div>
+</div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script>
+	$(document).ready(function() {
+		$('.js-scrollTo').on('click', function() { // Au clic sur un élément
+			var page = $(this).attr('href'); // Page cible
+			var speed = 750; // Durée de l'animation (en ms)
+			$('html, body').animate( { scrollTop: $(page).offset().top }, speed ); // Go
+			return false;
+		});
+	});
+</script>
+</body>
+</html>
